@@ -5,9 +5,22 @@ class ScanPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Center(
-        child: Icon(Icons.settings_overscan),
-      )),
+          child: _ScanPageContent(),)
+    );
+  }
+}
+
+class _ScanPageContent extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => _ScanPageContentState();
+
+}
+
+class _ScanPageContentState extends State<_ScanPageContent> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Icon(Icons.filter_center_focus),
     );
   }
 }
