@@ -25,7 +25,7 @@ class _IndexPageContentState extends State<_IndexPageContent> {
   int currentIndex = 1;
   List<Widget> tabItems = [HomePage(), HelpPage()];
 
-  void _navigateToScanpage() {
+  void _navigateToScanPage() {
     Navigator.of(context).pushNamed('/scan');
   }
   
@@ -45,7 +45,7 @@ class _IndexPageContentState extends State<_IndexPageContent> {
           floatingActionButtonLocation:
               FloatingActionButtonLocation.centerDocked,
           floatingActionButton: FloatingActionButton(
-            onPressed: _navigateToScanpage,
+            onPressed: _navigateToScanPage,
             child: Icon(Icons.filter_center_focus),
           ),
           bottomNavigationBar: BottomNavigationBar(
